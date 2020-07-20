@@ -22,7 +22,7 @@ const Home: React.FC = () => {
     setButtonText("Encurtando...");
 
     const response = await api
-      .post<ILink>("v1/", {
+      .post<ILink>("/", {
         original: originalLink,
       })
       .finally(() => {
